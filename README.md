@@ -10,13 +10,13 @@ git practice field
 ### 二、提交新建文件到远程仓库
 
 ~~~shell
-$ git status   #显示工作目录和暂存区的状态
-$ git add .    #添加所有新建文件到暂存区
-$ git status   #显示工作目录和暂存区的状态
-$ git commit -m "提交注释信息"   #将暂存区代码提交到本地仓库的相应分支
-$ git status   #显示工作目录和暂存区的状态
-$ git remote add origin 仓库地址	#没有绑定远程仓库或克隆项目，需要绑定一下。若绑定或已克隆，可忽略这一步
-$ git push origin 分支名     #将本地仓库的分支推送到远程仓库相应分支下
+$ git status   						#显示工作目录和暂存区的状态
+$ git add .    						#添加所有新建文件到暂存区
+$ git status   						#显示工作目录和暂存区的状态
+$ git commit -m "提交注释信息"		#将暂存区代码提交到本地仓库的相应分支
+$ git status					    #显示工作目录和暂存区的状态
+$ git remote add origin 仓库地址     #没有绑定远程仓库或克隆项目，需要绑定一下。若绑定或已克隆，可忽略这一步
+$ git push origin 分支名			  #将本地仓库的分支推送到远程仓库相应分支下
 ~~~
 
 ### 三、修改本地代码，在提交到远程仓库
@@ -32,8 +32,8 @@ $ git push origin 分支名
 ### 四、拉去远程仓库，同步本地仓库
 
 ~~~shell
-$ git pull	#拉去代码
-$ git pull origin 分支名	#拉取远程仓库制定分支到本地仓库的相应分支
+$ git pull					#拉去代码
+$ git pull origin 分支名	  #拉取远程仓库制定分支到本地仓库的相应分支
 ~~~
 
 > **注意：**git pull是git fetch与git merge 的组合，git pull执行的顺序是先git fetch，后git merge。如果拉去失败，可以使用强制拉取，命令如下：
